@@ -6,7 +6,7 @@
 /*   By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 00:34:26 by ckunimur          #+#    #+#             */
-/*   Updated: 2022/11/09 23:00:16 by ckunimur         ###   ########.fr       */
+/*   Updated: 2022/11/10 17:28:51 by ckunimur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_puthexa(unsigned long n, int flag)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (n >= 16)

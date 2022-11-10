@@ -6,7 +6,7 @@
 /*   By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:26:54 by ckunimur          #+#    #+#             */
-/*   Updated: 2022/11/09 22:22:34 by ckunimur         ###   ########.fr       */
+/*   Updated: 2022/11/10 17:34:43 by ckunimur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 int	ft_printf(const char *param, ...)
 {
-	int count;
+	int		count;
+	va_list	list;
 
 	count = 0;
-	va_list	list;
+	if (!param)
+		return (-1);
 	va_start(list, param);
 	while (*param)
 	{

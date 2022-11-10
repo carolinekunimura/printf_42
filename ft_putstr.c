@@ -6,7 +6,7 @@
 /*   By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/27 16:58:55 by ckunimur          #+#    #+#             */
-/*   Updated: 2022/11/09 22:46:40 by ckunimur         ###   ########.fr       */
+/*   Updated: 2022/11/10 17:24:57 by ckunimur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	ft_putstr(char *s)
 		write(1, &s[i], 1);
 		i++;
 	}
-	return(i);
+	return (i);
 }

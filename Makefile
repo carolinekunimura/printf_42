@@ -6,7 +6,7 @@
 #    By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/01 18:30:14 by ckunimur          #+#    #+#              #
-#    Updated: 2022/11/09 22:40:56 by ckunimur         ###   ########.fr        #
+#    Updated: 2022/11/10 17:36:28 by ckunimur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ AR = ar -rc
 
 RM = rm -f
 
-SRC =	ft_printf.c\
+SRCS =	ft_printf.c\
 		ft_checkflag.c\
 		ft_putchar.c\
 		ft_puthexa.c\
@@ -29,15 +29,15 @@ SRC =	ft_printf.c\
 		ft_putunsigned.c\
 		ft_putpointer.c
 
-OBJ = $(SRC:.c=.o)
+OBJS = $(SRCS:.c=.o)
 
 all:	$(NAME)
 
 $(NAME): $(OBJ)
-		$(AR) $(NAME) $(OBJ)
+		$(AR) $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJS)
 
 fclean: clean
 	$(RM) $(NAME)

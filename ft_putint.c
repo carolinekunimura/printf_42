@@ -6,7 +6,7 @@
 /*   By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 00:10:06 by ckunimur          #+#    #+#             */
-/*   Updated: 2022/11/09 22:48:14 by ckunimur         ###   ########.fr       */
+/*   Updated: 2022/11/10 17:29:03 by ckunimur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ int	ft_putint(int n)
 	}
 	else if (n < 0)
 	{
-		n *= -1;
 		count += ft_putchar('-');
 		count += ft_putint(-1 * n);
 	}
@@ -36,5 +35,5 @@ int	ft_putint(int n)
 		count += ft_putint(n / 10);
 		count += ft_putchar((n % 10) + 48);
 	}
-	return(count);
+	return (count);
 }
