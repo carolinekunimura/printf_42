@@ -6,7 +6,7 @@
 #    By: ckunimur <ckunimur@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/01 18:30:14 by ckunimur          #+#    #+#              #
-#    Updated: 2022/11/10 17:36:28 by ckunimur         ###   ########.fr        #
+#    Updated: 2022/11/10 17:53:52 by ckunimur         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ OBJS = $(SRCS:.c=.o)
 
 all:	$(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJS)
 		$(AR) $(NAME) $(OBJS)
 
 clean:
